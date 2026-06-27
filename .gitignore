@@ -1,1 +1,36 @@
+# Simulation
+*.wlf
+*.vcd
+*.vpd
+*.log
+*.jou
 
+# ModelSim
+transcript
+work/
+
+# Questa
+vsim.wlf
+
+# Vivado
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+
+# Quartus
+db/
+incremental_db/
+output_files/
+
+# Temporary
+*.tmp
+*.bak
+*.swp
+
+# VS Code
+.vscode/
+
+# OS Files
+Thumbs.db
+.DS_Store
