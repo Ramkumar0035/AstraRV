@@ -9,33 +9,369 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_pro/21.1
-vastrarv_pc
+vastrarv_alu
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1782713088
+Z1 !s110 1782719877
 !i10b 1
-!s100 5b^64h2zUhcG]4`J0VFPh1
-IaJ07Nnk1mc;d<QN`7koVO1
+!s100 K>8B0GJnQPW3fgOB?k9N]3
+IPIZDlMC9B1LmTiX:G?j?@0
 S1
 Z2 dC:/AstraRV
-w1782573823
-8C:/AstraRV/rtl/core/astrarc_pc.sv
-FC:/AstraRV/rtl/core/astrarc_pc.sv
-!i122 16
-L0 12 23
+w1782717242
+8C:/AstraRV/rtl/core/astrarv_alu.sv
+FC:/AstraRV/rtl/core/astrarv_alu.sv
+!i122 110
+L0 1 35
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 OV;L;2021.1;73
 r1
 !s85 0
 31
-!s108 1782713087.000000
+Z5 !s108 1782719877.000000
+!s107 C:/AstraRV/rtl/core/astrarv_alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_alu.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vastrarv_alu_control
+R0
+R1
+!i10b 1
+!s100 N7mHA;GTkBTV1]VbQF8>;2
+Izh0<G`za=9N:^GJ2?9hCA2
+S1
+R2
+w1782718384
+8C:/AstraRV/rtl/core/astrarv_alu_control.sv
+FC:/AstraRV/rtl/core/astrarv_alu_control.sv
+!i122 112
+L0 1 63
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/rtl/core/astrarv_alu_control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_alu_control.sv|
+!i113 1
+R6
+R7
+vastrarv_alu_control_tb
+R0
+R1
+!i10b 1
+!s100 J[OM?P>FYoYP^ZDf?IMPH0
+IQIYAYL31[<ankn_@ik4aQ3
+S1
+R2
+w1782718579
+8C:/AstraRV/tb/core/astrarv_alu_control_tb.sv
+FC:/AstraRV/tb/core/astrarv_alu_control_tb.sv
+!i122 113
+L0 3 102
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/tb/core/astrarv_alu_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_alu_control_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_alu_tb
+R0
+R1
+!i10b 1
+!s100 @Qa7JV08h7jDo7?Hok8:52
+IK5;ELfh1LF8=mjG3h?I5J1
+S1
+R2
+w1782717280
+8C:/AstraRV/tb/core/astrarv_alu_tb.sv
+FC:/AstraRV/tb/core/astrarv_alu_tb.sv
+!i122 111
+L0 3 112
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/tb/core/astrarv_alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_alu_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_control
+R0
+R1
+!i10b 1
+!s100 9X3997]XAd]Da`;oiFQaJ1
+I]WHio_9;43kbE;M`jS[H;3
+S1
+R2
+w1782719718
+8C:/AstraRV/rtl/core/astrarv_control.sv
+FC:/AstraRV/rtl/core/astrarv_control.sv
+!i122 114
+L0 1 74
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/rtl/core/astrarv_control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_control.sv|
+!i113 1
+R6
+R7
+vastrarv_control_tb
+R0
+R1
+!i10b 1
+!s100 bb;;cX9V9e[GzE?dJeQMh2
+IN^NT2@cJ7TNekH:=jYIL70
+S1
+R2
+w1782719760
+8C:/AstraRV/tb/core/astrarv_control_tb.sv
+FC:/AstraRV/tb/core/astrarv_control_tb.sv
+!i122 115
+L0 3 82
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/tb/core/astrarv_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_control_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_decoder
+R0
+Z8 !s110 1782719876
+!i10b 1
+!s100 >:IXo2d[Nf=Q]mo3mk:>F3
+Ibm3W^cQWeZZZa64VgWSOf1
+S1
+R2
+w1782715496
+8C:/AstraRV/rtl/core/astra_decoder.sv
+FC:/AstraRV/rtl/core/astra_decoder.sv
+!i122 106
+L0 1 30
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1782719876.000000
+!s107 C:/AstraRV/rtl/core/astra_decoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astra_decoder.sv|
+!i113 1
+R6
+R7
+vastrarv_decoder_tb
+R0
+R1
+!i10b 1
+!s100 9KcW@OH?_A^a?jnaE9S9H3
+IEn^L>1>BZ1T9fK@ZgGGfa3
+S1
+R2
+w1782715559
+8C:/AstraRV/tb/core/astrarv_decoder_tb.sv
+FC:/AstraRV/tb/core/astrarv_decoder_tb.sv
+!i122 107
+L0 3 65
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/tb/core/astrarv_decoder_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_decoder_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_ifu
+R0
+R8
+!i10b 1
+!s100 hJ1To6ELWWM7GQDNRfTZm1
+ILmnE;?8]_3<IklegooQLP3
+S1
+R2
+w1782714767
+8C:/AstraRV/rtl/core/astra_ifu.sv
+FC:/AstraRV/rtl/core/astra_ifu.sv
+!i122 104
+L0 1 45
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/AstraRV/rtl/core/astra_ifu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astra_ifu.sv|
+!i113 1
+R6
+R7
+vastrarv_ifu_tb
+R0
+R8
+!i10b 1
+!s100 >c_?Ad2LlbEh]M>[oI9171
+IHaVoBkaOESkg2C0IdkjW13
+S1
+R2
+w1782714763
+8C:/AstraRV/tb/core/astrarv_ifu_tb.sv
+FC:/AstraRV/tb/core/astrarv_ifu_tb.sv
+!i122 105
+L0 3 41
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/AstraRV/tb/core/astrarv_ifu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_ifu_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_imem
+R0
+R8
+!i10b 1
+!s100 :`11V6zlKOA_4Fk>`8jG[2
+IR;S9lECK<kK?3>X>]]iL@2
+S1
+R2
+w1782714041
+8C:/AstraRV/rtl/core/astrarv_imem.sv
+FC:/AstraRV/rtl/core/astrarv_imem.sv
+!i122 102
+L0 1 31
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/AstraRV/rtl/core/astrarv_imem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_imem.sv|
+!i113 1
+R6
+R7
+vastrarv_imem_tb
+R0
+R8
+!i10b 1
+!s100 eG[cIEhz1][nl5:6Xj:A33
+IQ^<m4]5U@LXf@mI6Pzz@K1
+S1
+R2
+w1782714414
+8C:/AstraRV/tb/core/astrarv_imem_tb.sv
+FC:/AstraRV/tb/core/astrarv_imem_tb.sv
+!i122 103
+L0 3 43
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/AstraRV/tb/core/astrarv_imem_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_imem_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_imm_gen
+R0
+R1
+!i10b 1
+!s100 c15<7ji^hnjEE@5le`9V12
+IKJ@b<CI4]WeTW<CkVgW9A3
+S1
+R2
+w1782716804
+8C:/AstraRV/rtl/core/astrarv_imm_gen.sv
+FC:/AstraRV/rtl/core/astrarv_imm_gen.sv
+!i122 108
+L0 1 59
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/rtl/core/astrarv_imm_gen.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_imm_gen.sv|
+!i113 1
+R6
+R7
+vastrarv_imm_gen_tb
+R0
+R1
+!i10b 1
+!s100 [G_P5lo8>Ped0UfSGXdlI1
+I];nUdN5;G5g6:m``>IFQn1
+S1
+R2
+w1782716829
+8C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv
+FC:/AstraRV/tb/core/astrarv_imm_gen_tb.sv
+!i122 109
+L0 3 56
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_pc
+R0
+R8
+!i10b 1
+!s100 5b^64h2zUhcG]4`J0VFPh1
+IaJ07Nnk1mc;d<QN`7koVO1
+S1
+R2
+w1782573823
+8C:/AstraRV/rtl/core/astrarc_pc.sv
+FC:/AstraRV/rtl/core/astrarc_pc.sv
+!i122 98
+L0 12 23
+R3
+R4
+r1
+!s85 0
+31
+!s108 1782719875.000000
 !s107 C:/AstraRV/rtl/core/astrarc_pc.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/rtl/core/astrarc_pc.sv|
 !i113 1
-Z5 o-work AstraRV -sv
-Z6 tCvgOpt 0
+Z10 o-work AstraRV -sv
+R7
 vastrarv_pc_tb
 R0
-R1
+R8
 !i10b 1
 !s100 a;OP8@VN=D<FXlhm9@JdP0
 IafHJQ[7fK_hXNJ4SaQ1L>2
@@ -44,22 +380,22 @@ R2
 w1782576130
 8C:/AstraRV/tb/core/astrarv_pc_tb.sv
 FC:/AstraRV/tb/core/astrarv_pc_tb.sv
-!i122 17
+!i122 99
 L0 3 55
 R3
 R4
 r1
 !s85 0
 31
-Z7 !s108 1782713088.000000
+R9
 !s107 C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !i113 1
-R5
-R6
+R10
+R7
 vastrarv_regfile
 R0
-R1
+R8
 !i10b 1
 !s100 2LIenLhEZ?WE3c2hV`0;V2
 I?ahh;F<T@J7FWEAOQe@?H3
@@ -68,22 +404,22 @@ R2
 w1782713013
 8C:/AstraRV/rtl/core/astra_regfile.sv
 FC:/AstraRV/rtl/core/astra_regfile.sv
-!i122 18
+!i122 100
 L0 1 55
 R3
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/AstraRV/rtl/core/astra_regfile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astra_regfile.sv|
 !i113 1
-Z8 o-work work -sv
 R6
+R7
 vastrarv_regfile_tb
 R0
-R1
+R8
 !i10b 1
 !s100 EoAJ1N=kMBFCdePOaa6lF0
 I3Rci0L;]Lbkfm@Y@M@z0@2
@@ -92,16 +428,16 @@ R2
 w1782713011
 8C:/AstraRV/tb/core/astrarv_regfile_tb.sv
 FC:/AstraRV/tb/core/astrarv_regfile_tb.sv
-!i122 19
+!i122 101
 L0 3 81
 R3
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/AstraRV/tb/core/astrarv_regfile_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_regfile_tb.sv|
 !i113 1
-R8
 R6
+R7
