@@ -254,3 +254,4 @@ Waveforms are generated using ModelSim to validate functional correctness before
 - Branch Logic
 - PC Selection Logic
 - Complete Single Cycle CPU
+
