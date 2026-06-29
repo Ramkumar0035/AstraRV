@@ -11,7 +11,7 @@ cModel Technology
 dC:/intelFPGA_pro/21.1
 vastrarv_alu
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1782719877
+Z1 !s110 1782721052
 !i10b 1
 !s100 K>8B0GJnQPW3fgOB?k9N]3
 IPIZDlMC9B1LmTiX:G?j?@0
@@ -20,14 +20,14 @@ Z2 dC:/AstraRV
 w1782717242
 8C:/AstraRV/rtl/core/astrarv_alu.sv
 FC:/AstraRV/rtl/core/astrarv_alu.sv
-!i122 110
+!i122 128
 L0 1 35
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 OV;L;2021.1;73
 r1
 !s85 0
 31
-Z5 !s108 1782719877.000000
+Z5 !s108 1782721052.000000
 !s107 C:/AstraRV/rtl/core/astrarv_alu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_alu.sv|
 !i113 1
@@ -44,7 +44,7 @@ R2
 w1782718384
 8C:/AstraRV/rtl/core/astrarv_alu_control.sv
 FC:/AstraRV/rtl/core/astrarv_alu_control.sv
-!i122 112
+!i122 130
 L0 1 63
 R3
 R4
@@ -68,7 +68,7 @@ R2
 w1782718579
 8C:/AstraRV/tb/core/astrarv_alu_control_tb.sv
 FC:/AstraRV/tb/core/astrarv_alu_control_tb.sv
-!i122 113
+!i122 131
 L0 3 102
 R3
 R4
@@ -92,7 +92,7 @@ R2
 w1782717280
 8C:/AstraRV/tb/core/astrarv_alu_tb.sv
 FC:/AstraRV/tb/core/astrarv_alu_tb.sv
-!i122 111
+!i122 129
 L0 3 112
 R3
 R4
@@ -116,7 +116,7 @@ R2
 w1782719718
 8C:/AstraRV/rtl/core/astrarv_control.sv
 FC:/AstraRV/rtl/core/astrarv_control.sv
-!i122 114
+!i122 132
 L0 1 74
 R3
 R4
@@ -140,7 +140,7 @@ R2
 w1782719760
 8C:/AstraRV/tb/core/astrarv_control_tb.sv
 FC:/AstraRV/tb/core/astrarv_control_tb.sv
-!i122 115
+!i122 133
 L0 3 82
 R3
 R4
@@ -155,7 +155,7 @@ R6
 R7
 vastrarv_decoder
 R0
-Z8 !s110 1782719876
+Z8 !s110 1782721051
 !i10b 1
 !s100 >:IXo2d[Nf=Q]mo3mk:>F3
 Ibm3W^cQWeZZZa64VgWSOf1
@@ -164,14 +164,14 @@ R2
 w1782715496
 8C:/AstraRV/rtl/core/astra_decoder.sv
 FC:/AstraRV/rtl/core/astra_decoder.sv
-!i122 106
+!i122 124
 L0 1 30
 R3
 R4
 r1
 !s85 0
 31
-Z9 !s108 1782719876.000000
+Z9 !s108 1782721051.000000
 !s107 C:/AstraRV/rtl/core/astra_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astra_decoder.sv|
 !i113 1
@@ -188,14 +188,14 @@ R2
 w1782715559
 8C:/AstraRV/tb/core/astrarv_decoder_tb.sv
 FC:/AstraRV/tb/core/astrarv_decoder_tb.sv
-!i122 107
+!i122 125
 L0 3 65
 R3
 R4
 r1
 !s85 0
 31
-R5
+R9
 !s107 C:/AstraRV/tb/core/astrarv_decoder_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_decoder_tb.sv|
 !i113 1
@@ -212,7 +212,7 @@ R2
 w1782714767
 8C:/AstraRV/rtl/core/astra_ifu.sv
 FC:/AstraRV/rtl/core/astra_ifu.sv
-!i122 104
+!i122 122
 L0 1 45
 R3
 R4
@@ -236,7 +236,7 @@ R2
 w1782714763
 8C:/AstraRV/tb/core/astrarv_ifu_tb.sv
 FC:/AstraRV/tb/core/astrarv_ifu_tb.sv
-!i122 105
+!i122 123
 L0 3 41
 R3
 R4
@@ -260,7 +260,7 @@ R2
 w1782714041
 8C:/AstraRV/rtl/core/astrarv_imem.sv
 FC:/AstraRV/rtl/core/astrarv_imem.sv
-!i122 102
+!i122 120
 L0 1 31
 R3
 R4
@@ -284,7 +284,7 @@ R2
 w1782714414
 8C:/AstraRV/tb/core/astrarv_imem_tb.sv
 FC:/AstraRV/tb/core/astrarv_imem_tb.sv
-!i122 103
+!i122 121
 L0 3 43
 R3
 R4
@@ -308,7 +308,7 @@ R2
 w1782716804
 8C:/AstraRV/rtl/core/astrarv_imm_gen.sv
 FC:/AstraRV/rtl/core/astrarv_imm_gen.sv
-!i122 108
+!i122 126
 L0 1 59
 R3
 R4
@@ -332,7 +332,7 @@ R2
 w1782716829
 8C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv
 FC:/AstraRV/tb/core/astrarv_imm_gen_tb.sv
-!i122 109
+!i122 127
 L0 3 56
 R3
 R4
@@ -342,6 +342,54 @@ r1
 R5
 !s107 C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_imm_gen_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_operand_mux
+R0
+R1
+!i10b 1
+!s100 Y@Flia62AfA5o2=<c_]2;1
+Io]0n1<IcOb0EWm4`J9W9J1
+S1
+R2
+w1782720656
+8C:/AstraRV/rtl/core/astrarv_operand_mux.sv
+FC:/AstraRV/rtl/core/astrarv_operand_mux.sv
+!i122 134
+L0 1 20
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/AstraRV/rtl/core/astrarv_operand_mux.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_operand_mux.sv|
+!i113 1
+R6
+R7
+vastrarv_operand_mux_tb
+R0
+!s110 1782721053
+!i10b 1
+!s100 MYAWEj2dhdUE9UD=g;K8S0
+Ii;P=kCaA8ZdFZ@0T^jBcS0
+S1
+R2
+w1782720697
+8C:/AstraRV/tb/core/astrarv_operand_mux_tb.sv
+FC:/AstraRV/tb/core/astrarv_operand_mux_tb.sv
+!i122 135
+L0 3 44
+R3
+R4
+r1
+!s85 0
+31
+!s108 1782721053.000000
+!s107 C:/AstraRV/tb/core/astrarv_operand_mux_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_operand_mux_tb.sv|
 !i113 1
 R6
 R7
@@ -356,14 +404,14 @@ R2
 w1782573823
 8C:/AstraRV/rtl/core/astrarc_pc.sv
 FC:/AstraRV/rtl/core/astrarc_pc.sv
-!i122 98
+!i122 116
 L0 12 23
 R3
 R4
 r1
 !s85 0
 31
-!s108 1782719875.000000
+!s108 1782721050.000000
 !s107 C:/AstraRV/rtl/core/astrarc_pc.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/rtl/core/astrarc_pc.sv|
 !i113 1
@@ -380,7 +428,7 @@ R2
 w1782576130
 8C:/AstraRV/tb/core/astrarv_pc_tb.sv
 FC:/AstraRV/tb/core/astrarv_pc_tb.sv
-!i122 99
+!i122 117
 L0 3 55
 R3
 R4
@@ -404,7 +452,7 @@ R2
 w1782713013
 8C:/AstraRV/rtl/core/astra_regfile.sv
 FC:/AstraRV/rtl/core/astra_regfile.sv
-!i122 100
+!i122 118
 L0 1 55
 R3
 R4
@@ -428,7 +476,7 @@ R2
 w1782713011
 8C:/AstraRV/tb/core/astrarv_regfile_tb.sv
 FC:/AstraRV/tb/core/astrarv_regfile_tb.sv
-!i122 101
+!i122 119
 L0 3 81
 R3
 R4
