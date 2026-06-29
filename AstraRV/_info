@@ -203,7 +203,7 @@ R6
 R7
 vastrarv_dmem
 R0
-Z12 !s110 1782748280
+Z12 !s110 1782749708
 !i10b 1
 !s100 :AnYR==3:SY;3FCYf0Fkh0
 I^a8zlTFAb>a72`@BW9M]j0
@@ -212,14 +212,14 @@ R2
 w1782748069
 8C:/AstraRV/rtl/core/astrarv_dmem.sv
 FC:/AstraRV/rtl/core/astrarv_dmem.sv
-!i122 182
+!i122 186
 L0 1 28
 R3
 R4
 r1
 !s85 0
 31
-Z13 !s108 1782748280.000000
+Z13 !s108 1782749708.000000
 !s107 C:/AstraRV/rtl/core/astrarv_dmem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_dmem.sv|
 !i113 1
@@ -236,7 +236,7 @@ R2
 w1782748178
 8C:/AstraRV/tb/core/astrarv_dmem_tb.sv
 FC:/AstraRV/tb/core/astrarv_dmem_tb.sv
-!i122 183
+!i122 187
 L0 1 46
 R3
 R4
@@ -539,7 +539,7 @@ R6
 R7
 vastrarv_single_cycle_cpu
 R0
-R12
+!s110 1782749707
 !i10b 1
 !s100 9ZJM3V9bnMaO1PYzkMmG73
 IeXd>TD7m?gj@0APF53Q@00
@@ -548,14 +548,14 @@ R2
 w1782731091
 8C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
 FC:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
-!i122 180
+!i122 184
 L0 1 192
 R3
 R4
 r1
 !s85 0
 31
-R13
+Z17 !s108 1782749707.000000
 !s107 C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !i113 1
@@ -572,16 +572,64 @@ R2
 w1782721738
 8C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
 FC:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
-!i122 181
+!i122 185
 L0 3 28
 R3
 R4
 r1
 !s85 0
 31
-R13
+R17
 !s107 C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
+!i113 1
+R6
+R7
+vastrarv_writeback_mux
+R0
+R12
+!i10b 1
+!s100 3idJ[La17Z9VJ=i]lgfQY0
+IK15YHL1<cgAbBBXzFCzg91
+S1
+R2
+w1782749616
+8C:/AstraRV/rtl/core/astrarv_writeback_mux.sv
+FC:/AstraRV/rtl/core/astrarv_writeback_mux.sv
+!i122 188
+L0 1 21
+R3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/AstraRV/rtl/core/astrarv_writeback_mux.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_writeback_mux.sv|
+!i113 1
+R6
+R7
+vastrarv_writeback_mux_tb
+R0
+R12
+!i10b 1
+!s100 ]g5mR[IFJTQ=79M=<_52:3
+ISdkFU<fE1Dm2BFENl8ZX73
+S1
+R2
+w1782749659
+8C:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv
+FC:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv
+!i122 189
+L0 1 37
+R3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv|
 !i113 1
 R6
 R7
