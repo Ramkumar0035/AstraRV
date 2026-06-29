@@ -1,13 +1,3 @@
-//==============================================================================
-// Project : AstraRV
-// Module  : Program Counter
-// File    : astrarv_pc.sv
-//
-// Description:
-// 32-bit Program Counter for the AstraRV processor.
-//
-// Author  : Ram Kumar B
-//==============================================================================
 
 module astrarv_pc #(
     parameter XLEN = 32,
