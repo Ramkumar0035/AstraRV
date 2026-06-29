@@ -213,7 +213,7 @@ w1782714767
 8C:/AstraRV/rtl/core/astra_ifu.sv
 FC:/AstraRV/rtl/core/astra_ifu.sv
 !i122 122
-Z12 L0 1 45
+L0 1 45
 R3
 R4
 r1
@@ -251,7 +251,7 @@ R6
 R7
 vastrarv_imem
 R0
-Z13 !s110 1782721812
+Z12 !s110 1782721812
 !i10b 1
 !s100 :`11V6zlKOA_4Fk>`8jG[2
 IR;S9lECK<kK?3>X>]]iL@2
@@ -267,7 +267,7 @@ R4
 r1
 !s85 0
 31
-Z14 !s108 1782721812.000000
+Z13 !s108 1782721812.000000
 !s107 C:/AstraRV/rtl/core/astrarv_imem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_imem.sv|
 !i113 1
@@ -275,7 +275,7 @@ R6
 R7
 vastrarv_imem_tb
 R0
-R13
+R12
 !i10b 1
 !s100 eG[cIEhz1][nl5:6Xj:A33
 IQ^<m4]5U@LXf@mI6Pzz@K1
@@ -291,7 +291,7 @@ R4
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/AstraRV/tb/core/astrarv_imem_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_imem_tb.sv|
 !i113 1
@@ -415,7 +415,7 @@ r1
 !s107 C:/AstraRV/rtl/core/astrarc_pc.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/rtl/core/astrarc_pc.sv|
 !i113 1
-Z15 o-work AstraRV -sv
+Z14 o-work AstraRV -sv
 R7
 vastrarv_pc_tb
 R0
@@ -439,7 +439,7 @@ r1
 !s107 C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !i113 1
-R15
+R14
 R7
 vastrarv_regfile
 R0
@@ -491,23 +491,23 @@ R6
 R7
 vastrarv_single_cycle_cpu
 R0
-Z16 !s110 1782722630
+Z15 !s110 1782723585
 !i10b 1
-!s100 :QR^;eQZGVTFOKO^EFK1[1
-IK;4Zc@nD7j:CiZ66]S5Bb2
+!s100 U21WoLV?LCXLNh^;8F`E70
+IEm7EX^2UA0EA>gnmW0A4d0
 S1
 R2
-w1782722105
+w1782723420
 8C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
 FC:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
-!i122 158
-R12
+!i122 166
+L0 1 73
 R3
 R4
 r1
 !s85 0
 31
-Z17 !s108 1782722630.000000
+Z16 !s108 1782723585.000000
 !s107 C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !i113 1
@@ -515,7 +515,7 @@ R6
 R7
 vastrarv_single_cycle_cpu_tb
 R0
-R16
+R15
 !i10b 1
 !s100 :O>f4MBIl:DBiCD:M60[D3
 ISJ1GJZz@EINhmQ9YOV6FX2
@@ -524,14 +524,14 @@ R2
 w1782721738
 8C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
 FC:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
-!i122 159
+!i122 167
 L0 3 28
 R3
 R4
 r1
 !s85 0
 31
-R17
+R16
 !s107 C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
 !i113 1
