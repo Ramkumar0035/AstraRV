@@ -65,11 +65,19 @@ module astrarv_single_cycle_cpu #(
     logic        zero;
 
     //---------------------------------------
-    // Temporary Writeback
+    // Data Memory
+    //---------------------------------------
+    logic [31:0] mem_data;
+
+    //---------------------------------------
+    // Write Back
     //---------------------------------------
     logic [31:0] write_back_data;
 
-    assign write_back_data = alu_result;
+    //---------------------------------------
+    // Branch Unit
+    //---------------------------------------
+    logic [31:0] branch_next_pc;
 
     //---------------------------------------
     // Program Counter
@@ -77,49 +85,66 @@ module astrarv_single_cycle_cpu #(
     astrarv_pc #(
         .XLEN(XLEN)
     ) u_pc (
+
         .clk_i(i_clk),
         .rst_ni(i_rst_n),
+
         .i_enable(1'b1),
+
         .i_next_pc(next_pc),
+
         .o_pc(pc)
+
     );
 
     //---------------------------------------
     // Instruction Memory
     //---------------------------------------
     astrarv_imem u_imem (
+
         .i_addr(pc),
         .o_instr(instruction)
+
     );
 
-    assign next_pc = pc + 32'd4;
+    //---------------------------------------
+    // Next PC
+    //---------------------------------------
+    assign next_pc = branch_next_pc;
 
     //---------------------------------------
     // Decoder
     //---------------------------------------
     astrarv_decoder u_decoder (
+
         .i_instr(instruction),
+
         .opcode(opcode),
         .rd(rd),
         .funct3(funct3),
         .rs1(rs1),
         .rs2(rs2),
         .funct7(funct7)
+
     );
 
     //---------------------------------------
     // Immediate Generator
     //---------------------------------------
     astrarv_imm_gen u_imm_gen (
+
         .i_instr(instruction),
         .o_imm(immediate)
+
     );
 
     //---------------------------------------
     // Main Control
     //---------------------------------------
     astrarv_control u_control (
+
         .i_opcode(opcode),
+
         .o_reg_write(reg_write),
         .o_mem_read(mem_read),
         .o_mem_write(mem_write),
@@ -127,16 +152,20 @@ module astrarv_single_cycle_cpu #(
         .o_alu_src(alu_src),
         .o_branch(branch),
         .o_alu_op(alu_op)
+
     );
 
     //---------------------------------------
     // ALU Control
     //---------------------------------------
     astrarv_alu_control u_alu_control (
+
         .i_alu_op(alu_op),
         .i_funct3(funct3),
         .i_funct7(funct7),
+
         .o_alu_ctrl(alu_ctrl)
+
     );
 
     //---------------------------------------
@@ -186,6 +215,53 @@ module astrarv_single_cycle_cpu #(
 
         .o_result(alu_result),
         .o_zero(zero)
+
+    );
+
+    //---------------------------------------
+    // Data Memory
+    //---------------------------------------
+    astrarv_dmem u_dmem (
+
+        .clk_i(i_clk),
+
+        .i_mem_read(mem_read),
+        .i_mem_write(mem_write),
+
+        .i_addr(alu_result),
+
+        .i_write_data(rs2_data),
+
+        .o_read_data(mem_data)
+
+    );
+
+    //---------------------------------------
+    // Write Back MUX
+    //---------------------------------------
+    astrarv_writeback_mux u_writeback_mux (
+
+        .i_alu_result(alu_result),
+        .i_mem_data(mem_data),
+
+        .i_mem_to_reg(mem_to_reg),
+
+        .o_write_data(write_back_data)
+
+    );
+
+    //---------------------------------------
+    // Branch Unit
+    //---------------------------------------
+    astrarv_branch_unit u_branch_unit (
+
+        .i_branch(branch),
+        .i_zero(zero),
+
+        .i_pc(pc),
+        .i_imm(immediate),
+
+        .o_next_pc(branch_next_pc)
 
     );
 

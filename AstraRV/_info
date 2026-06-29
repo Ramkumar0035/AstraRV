@@ -107,7 +107,7 @@ R6
 R7
 vastrarv_branch_unit
 R0
-Z9 !s110 1782750247
+Z9 !s110 1782750923
 !i10b 1
 !s100 7;3:z^EZ7Aho@mSh^APS71
 IlAQ?e6fZe51e:?O17of9g3
@@ -116,14 +116,14 @@ R2
 w1782750137
 8C:/AstraRV/rtl/core/astrarv_branch_unit.sv
 FC:/AstraRV/rtl/core/astrarv_branch_unit.sv
-!i122 196
+!i122 212
 L0 1 22
 R3
 R4
 r1
 !s85 0
 31
-Z10 !s108 1782750247.000000
+Z10 !s108 1782750923.000000
 !s107 C:/AstraRV/rtl/core/astrarv_branch_unit.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_branch_unit.sv|
 !i113 1
@@ -140,7 +140,7 @@ R2
 w1782750187
 8C:/AstraRV/tb/core/astrarv_branch_unit_tb.sv
 FC:/AstraRV/tb/core/astrarv_branch_unit_tb.sv
-!i122 197
+!i122 213
 L0 1 47
 R3
 R4
@@ -260,14 +260,14 @@ R2
 w1782748069
 8C:/AstraRV/rtl/core/astrarv_dmem.sv
 FC:/AstraRV/rtl/core/astrarv_dmem.sv
-!i122 192
+!i122 208
 L0 1 28
 R3
 R4
 r1
 !s85 0
 31
-R10
+Z14 !s108 1782750922.000000
 !s107 C:/AstraRV/rtl/core/astrarv_dmem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_dmem.sv|
 !i113 1
@@ -284,7 +284,7 @@ R2
 w1782748178
 8C:/AstraRV/tb/core/astrarv_dmem_tb.sv
 FC:/AstraRV/tb/core/astrarv_dmem_tb.sv
-!i122 193
+!i122 209
 L0 1 46
 R3
 R4
@@ -347,7 +347,7 @@ R6
 R7
 vastrarv_imem
 R0
-Z14 !s110 1782721812
+Z15 !s110 1782721812
 !i10b 1
 !s100 :`11V6zlKOA_4Fk>`8jG[2
 IR;S9lECK<kK?3>X>]]iL@2
@@ -363,7 +363,7 @@ R4
 r1
 !s85 0
 31
-Z15 !s108 1782721812.000000
+Z16 !s108 1782721812.000000
 !s107 C:/AstraRV/rtl/core/astrarv_imem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_imem.sv|
 !i113 1
@@ -371,7 +371,7 @@ R6
 R7
 vastrarv_imem_tb
 R0
-R14
+R15
 !i10b 1
 !s100 eG[cIEhz1][nl5:6Xj:A33
 IQ^<m4]5U@LXf@mI6Pzz@K1
@@ -387,7 +387,7 @@ R4
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/AstraRV/tb/core/astrarv_imem_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_imem_tb.sv|
 !i113 1
@@ -511,7 +511,7 @@ r1
 !s107 C:/AstraRV/rtl/core/astrarc_pc.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/rtl/core/astrarc_pc.sv|
 !i113 1
-Z16 o-work AstraRV -sv
+Z17 o-work AstraRV -sv
 R7
 vastrarv_pc_tb
 R0
@@ -535,7 +535,7 @@ r1
 !s107 C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_pc_tb.sv|
 !i113 1
-R16
+R17
 R7
 vastrarv_regfile
 R0
@@ -587,23 +587,23 @@ R6
 R7
 vastrarv_single_cycle_cpu
 R0
-R9
+Z18 !s110 1782750922
 !i10b 1
-!s100 9ZJM3V9bnMaO1PYzkMmG73
-IeXd>TD7m?gj@0APF53Q@00
+!s100 7@ca_58GAon4c5h=LeVoH3
+I0Uo`Hn_Y6o^dF4OCI1@340
 S1
 R2
-w1782731091
+w1782750918
 8C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
 FC:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
-!i122 190
-L0 1 192
+!i122 206
+L0 1 268
 R3
 R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !i113 1
@@ -611,7 +611,7 @@ R6
 R7
 vastrarv_single_cycle_cpu_tb
 R0
-R9
+R18
 !i10b 1
 !s100 :O>f4MBIl:DBiCD:M60[D3
 ISJ1GJZz@EINhmQ9YOV6FX2
@@ -620,14 +620,14 @@ R2
 w1782721738
 8C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
 FC:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
-!i122 191
+!i122 207
 L0 3 28
 R3
 R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv|
 !i113 1
@@ -644,7 +644,7 @@ R2
 w1782749616
 8C:/AstraRV/rtl/core/astrarv_writeback_mux.sv
 FC:/AstraRV/rtl/core/astrarv_writeback_mux.sv
-!i122 194
+!i122 210
 L0 1 21
 R3
 R4
@@ -668,7 +668,7 @@ R2
 w1782749659
 8C:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv
 FC:/AstraRV/tb/core/astrarv_writeback_mux_tb.sv
-!i122 195
+!i122 211
 L0 1 37
 R3
 R4
