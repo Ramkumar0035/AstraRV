@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+vastrarv_pc
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1782713088
+!i10b 1
+!s100 5b^64h2zUhcG]4`J0VFPh1
+IaJ07Nnk1mc;d<QN`7koVO1
+S1
+Z2 dC:/AstraRV
+w1782573823
+8C:/AstraRV/rtl/core/astrarc_pc.sv
+FC:/AstraRV/rtl/core/astrarc_pc.sv
+!i122 16
+L0 12 23
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OV;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1782713087.000000
+!s107 C:/AstraRV/rtl/core/astrarc_pc.sv|
+!s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/rtl/core/astrarc_pc.sv|
+!i113 1
+Z5 o-work AstraRV -sv
+Z6 tCvgOpt 0
+vastrarv_pc_tb
+R0
+R1
+!i10b 1
+!s100 a;OP8@VN=D<FXlhm9@JdP0
+IafHJQ[7fK_hXNJ4SaQ1L>2
+S1
+R2
+w1782576130
+8C:/AstraRV/tb/core/astrarv_pc_tb.sv
+FC:/AstraRV/tb/core/astrarv_pc_tb.sv
+!i122 17
+L0 3 55
+R3
+R4
+r1
+!s85 0
+31
+Z7 !s108 1782713088.000000
+!s107 C:/AstraRV/tb/core/astrarv_pc_tb.sv|
+!s90 -reportprogress|300|-work|AstraRV|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_pc_tb.sv|
+!i113 1
+R5
+R6
+vastrarv_regfile
+R0
+R1
+!i10b 1
+!s100 2LIenLhEZ?WE3c2hV`0;V2
+I?ahh;F<T@J7FWEAOQe@?H3
+S1
+R2
+w1782713013
+8C:/AstraRV/rtl/core/astra_regfile.sv
+FC:/AstraRV/rtl/core/astra_regfile.sv
+!i122 18
+L0 1 55
+R3
+R4
+r1
+!s85 0
+31
+R7
+!s107 C:/AstraRV/rtl/core/astra_regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astra_regfile.sv|
+!i113 1
+Z8 o-work work -sv
+R6
+vastrarv_regfile_tb
+R0
+R1
+!i10b 1
+!s100 EoAJ1N=kMBFCdePOaa6lF0
+I3Rci0L;]Lbkfm@Y@M@z0@2
+S1
+R2
+w1782713011
+8C:/AstraRV/tb/core/astrarv_regfile_tb.sv
+FC:/AstraRV/tb/core/astrarv_regfile_tb.sv
+!i122 19
+L0 3 81
+R3
+R4
+r1
+!s85 0
+31
+R7
+!s107 C:/AstraRV/tb/core/astrarv_regfile_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/tb/core/astrarv_regfile_tb.sv|
+!i113 1
+R8
+R6
