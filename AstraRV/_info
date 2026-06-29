@@ -491,23 +491,23 @@ R6
 R7
 vastrarv_single_cycle_cpu
 R0
-Z15 !s110 1782723585
+Z15 !s110 1782731281
 !i10b 1
-!s100 U21WoLV?LCXLNh^;8F`E70
-IEm7EX^2UA0EA>gnmW0A4d0
+!s100 9ZJM3V9bnMaO1PYzkMmG73
+IeXd>TD7m?gj@0APF53Q@00
 S1
 R2
-w1782723420
+w1782731091
 8C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
 FC:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
-!i122 166
-L0 1 73
+!i122 178
+L0 1 192
 R3
 R4
 r1
 !s85 0
 31
-Z16 !s108 1782723585.000000
+Z16 !s108 1782731281.000000
 !s107 C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv|
 !i113 1
@@ -524,7 +524,7 @@ R2
 w1782721738
 8C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
 FC:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
-!i122 167
+!i122 179
 L0 3 28
 R3
 R4
