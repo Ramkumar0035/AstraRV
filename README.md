@@ -8,12 +8,13 @@ The processor is developed module-by-module with independent verification before
 
 # Features
 
-- RV32I Single-Cycle Architecture
-- 32-bit Datapath
-- Modular RTL Design
+- 32-bit RV32I Single-Cycle Processor
+- Modular RTL Architecture
+- SystemVerilog RTL Implementation
 - Independent Module Verification
-- Integrated CPU Verification
-- ModelSim Functional Verification
+- Complete CPU Integration
+- Complete Verification of All Implemented Instructions
+- ModelSim Waveform Validation
 - Intel FPGA Compatible RTL
 
 ---
@@ -24,15 +25,15 @@ The processor is developed module-by-module with independent verification before
 |------|-------|
 | ISA | RV32I |
 | Architecture | Single Cycle |
-| RTL Language | SystemVerilog |
 | Data Width | 32-bit |
 | Instruction Width | 32-bit |
+| RTL Language | SystemVerilog |
 | Verification | ModelSim |
 | FPGA Target | Intel FPGA |
 
 ---
 
-# Supported Instructions
+# Verified Instruction Support
 
 ## R-Type
 
@@ -73,34 +74,35 @@ The processor is developed module-by-module with independent verification before
 # Processor Datapath
 
 ```
-               Program Counter
-                     │
-                     ▼
-          Instruction Memory
-                     │
-                     ▼
-          Instruction Decoder
-          ┌──────────┴──────────┐
-          ▼                     ▼
- Immediate Generator      Control Unit
-                                 │
-                          ALU Control
-                                 │
-          ┌──────────┬───────────┘
-          ▼          ▼
-     Register File  Operand MUX
-             │          │
-             └────┬─────┘
-                  ▼
-                 ALU
-                  │
-          ┌───────┴────────┐
-          ▼                ▼
-    Data Memory      Writeback MUX
-          │                │
-          └────────┬───────┘
-                   ▼
-            Register File
+                Program Counter
+                       │
+                       ▼
+            Instruction Memory
+                       │
+                       ▼
+            Instruction Decoder
+              ┌────────┴────────┐
+              ▼                 ▼
+    Immediate Generator    Main Control Unit
+                                    │
+                               ALU Control
+                                    │
+        ┌───────────────────────────┘
+        ▼
+    Register File
+        │
+        ▼
+    Operand Multiplexer
+        │
+        ▼
+        ALU
+        │
+   ┌────┴─────┐
+   ▼          ▼
+Data Memory Writeback MUX
+        │
+        ▼
+ Register File
 ```
 
 ---
@@ -119,37 +121,68 @@ The processor is developed module-by-module with independent verification before
 - Data Memory
 - Writeback Multiplexer
 - Branch Unit
-- Single Cycle CPU Top
+- Single-Cycle CPU Top Module
 
 ---
 
-# Verification
+# Verification Summary
 
-The processor has been verified using dedicated SystemVerilog testbenches and ModelSim waveforms.
-
-Completed verification:
+Successfully Verified
 
 - Program Counter
-- Instruction Fetch
-- Instruction Decode
-- Immediate Generation
-- Control Unit
+- Instruction Memory
+- Instruction Decoder
+- Immediate Generator
+- Main Control Unit
+- ALU Control Unit
 - Register File
-- ALU Operations
-- Load / Store
-- Branch (BEQ)
+- Operand Multiplexer
+- Arithmetic Logic Unit
+- Data Memory
+- Writeback Multiplexer
+- Branch Unit
 - Complete CPU Integration
+
+Instruction Verification
+
+- R-Type Arithmetic Instructions
+- I-Type Arithmetic Instructions
+- Memory Instructions
+- Branch Instructions
+
+Total Verified Instructions
+
+**22**
 
 ---
 
 # Repository Structure
 
 ```
-rtl/
-tb/
-docs/
-images/
+AstraRV/
+│
+├── rtl/
+├── tb/
+├── docs/
+├── images/
+├── README.md
+├── LICENSE
+├── .gitignore
+└── modelsim.do
 ```
+
+---
+
+# Project Statistics
+
+| Item | Value |
+|------|-------|
+| RTL Modules | 13 |
+| Testbenches | 1 |
+| Verified Instructions | 22 |
+| Verification Status | PASS |
+| Simulator | ModelSim |
+| Language | SystemVerilog |
 
 ---
 
@@ -157,20 +190,45 @@ images/
 
 - SystemVerilog
 - ModelSim
-- VS Code
 - Git
 - GitHub
+- Visual Studio Code
 
 ---
 
-# Future Improvements
+# Future Work
 
-- Remaining RV32I Branch Instructions
-- Jump Instructions (JAL/JALR)
-- LUI/AUIPC
-- Pipeline Architecture
+## AstraRV v2.0
+
+- BNE
+- BLT
+- BGE
+- BLTU
+- BGEU
+- JAL
+- JALR
+- LUI
+- AUIPC
+
+## AstraRV v3.0
+
+- Five-Stage Pipeline
+- Hazard Detection Unit
+- Forwarding Unit
+- Pipeline Registers
+
+## AstraRV v4.0
+
+- AXI4 Interface
+- Instruction Cache
+- Data Cache
+
+## AstraRV v5.0
+
 - UVM Verification Environment
-- FPGA Implementation
+- Functional Coverage
+- Assertions
+- Constrained Random Verification
 
 ---
 
@@ -178,6 +236,6 @@ images/
 
 **Ram Kumar B**
 
-Electronics and Communication Engineering
+B.Tech Electronics and Communication Engineering
 
 VIT Chennai
