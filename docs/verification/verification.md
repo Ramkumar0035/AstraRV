@@ -2,24 +2,25 @@
 
 # Overview
 
-The AstraRV processor has been verified using a combination of dedicated module-level testbenches and a complete CPU integration testbench.
+The AstraRV processor has been verified using dedicated SystemVerilog testbenches and ModelSim waveform analysis.
 
-Functional verification was performed using **ModelSim**, where every RTL module was validated independently before being integrated into the complete single-cycle processor.
+Each RTL module was verified independently before progressive integration into the complete RV32I single-cycle processor. After integration, complete processor functionality was validated using directed instruction-level test programs.
 
 ---
 
 # Verification Methodology
 
-The verification flow follows an incremental approach.
+The verification flow follows an incremental RTL design methodology.
 
-1. Develop RTL module.
-2. Create dedicated SystemVerilog testbench.
-3. Verify functionality using simulation.
+1. Design RTL module.
+2. Develop dedicated SystemVerilog testbench.
+3. Verify module functionality.
 4. Inspect ModelSim waveforms.
 5. Integrate verified module into CPU.
-6. Perform full CPU verification.
+6. Execute instruction-level verification.
+7. Validate complete processor functionality.
 
-This methodology reduces debugging complexity and improves design reliability.
+This approach minimizes integration bugs and simplifies debugging.
 
 ---
 
@@ -35,43 +36,17 @@ This methodology reduces debugging complexity and improves design reliability.
 | ALU Control Unit | ✔ | ✔ | PASS |
 | Register File | ✔ | ✔ | PASS |
 | Operand Multiplexer | ✔ | ✔ | PASS |
-| ALU | ✔ | ✔ | PASS |
+| Arithmetic Logic Unit | ✔ | ✔ | PASS |
 | Data Memory | ✔ | ✔ | PASS |
 | Writeback Multiplexer | ✔ | ✔ | PASS |
 | Branch Unit | ✔ | ✔ | PASS |
+| Top-Level CPU Integration | ✔ | ✔ | PASS |
 
 ---
 
-# CPU Integration Verification
+# Instruction Verification
 
-The complete processor was verified using an integrated SystemVerilog testbench.
-
-The following instruction groups were executed and verified.
-
----
-
-## Arithmetic Instructions
-
-### ADDI
-
-Purpose
-
-- Immediate addition
-- Register writeback
-
-Expected Result
-
-```
-x1 = Immediate Value
-```
-
-Status
-
-PASS
-
----
-
-### R-Type Operations
+## R-Type Instructions
 
 Verified Instructions
 
@@ -86,9 +61,25 @@ Verified Instructions
 - SLT
 - SLTU
 
-Expected Result
+Status
 
-Correct ALU result written into destination register.
+PASS
+
+---
+
+## I-Type Instructions
+
+Verified Instructions
+
+- ADDI
+- ANDI
+- ORI
+- XORI
+- SLLI
+- SRLI
+- SRAI
+- SLTI
+- SLTIU
 
 Status
 
@@ -105,11 +96,10 @@ Verified Instructions
 
 Verification Items
 
-- Address generation
-- Memory write
-- Memory read
-- Writeback MUX
-- Register update
+- Address Generation
+- Memory Write
+- Memory Read
+- Writeback Operation
 
 Status
 
@@ -125,11 +115,11 @@ Verified Instruction
 
 Verification Items
 
-- Register comparison
-- Zero flag generation
-- Branch decision
-- Program Counter update
-- Branch target calculation
+- Register Comparison
+- Zero Flag Generation
+- Branch Decision
+- Branch Target Calculation
+- Program Counter Update
 
 Status
 
@@ -139,39 +129,42 @@ PASS
 
 # Integrated CPU Verification
 
-The following datapath was verified.
+The complete processor datapath has been verified.
 
 ```
-PC
-↓
-
+Program Counter
+      │
+      ▼
 Instruction Fetch
-↓
-
+      │
+      ▼
 Instruction Decode
-↓
-
+      │
+      ▼
 Immediate Generation
-↓
-
+      │
+      ▼
 Control Unit
-↓
-
+      │
+      ▼
+ALU Control
+      │
+      ▼
 Register File
-↓
-
+      │
+      ▼
 Operand Selection
-↓
-
-ALU Execution
-↓
-
+      │
+      ▼
+Arithmetic Logic Unit
+      │
+      ▼
 Data Memory
-↓
-
+      │
+      ▼
 Writeback
-↓
-
+      │
+      ▼
 Register File Update
 ```
 
@@ -183,9 +176,9 @@ PASS
 
 # Waveform Verification
 
-Waveforms were inspected for every major RTL module.
+Waveforms were analyzed for every major RTL module.
 
-Verified signals include
+Verified Signals
 
 - Program Counter
 - Next Program Counter
@@ -201,12 +194,13 @@ Verified signals include
 - Zero Flag
 - Data Memory
 - Writeback Data
+- Branch Logic
 
-All waveform transitions matched the expected processor behavior.
+All observed signal transitions matched the expected RV32I processor behavior.
 
 ---
 
-# Functional Verification Coverage
+# Functional Coverage
 
 | Feature | Status |
 |----------|--------|
@@ -215,14 +209,29 @@ All waveform transitions matched the expected processor behavior.
 | Immediate Generation | PASS |
 | Register Read | PASS |
 | Register Write | PASS |
-| Arithmetic Execution | PASS |
-| Logical Execution | PASS |
+| Arithmetic Operations | PASS |
+| Logical Operations | PASS |
 | Shift Operations | PASS |
 | Comparison Operations | PASS |
-| Load Operation | PASS |
-| Store Operation | PASS |
-| Branch Operation | PASS |
+| Load Operations | PASS |
+| Store Operations | PASS |
+| Branch Operations | PASS |
 | Writeback | PASS |
+| Complete CPU Integration | PASS |
+
+---
+
+# Verification Statistics
+
+| Item | Result |
+|------|--------|
+| RTL Modules Verified | 13 |
+| CPU Integration | PASS |
+| R-Type Instructions | 10 |
+| I-Type Instructions | 9 |
+| Memory Instructions | 2 |
+| Branch Instructions | 1 |
+| Total Verified Instructions | **22** |
 
 ---
 
@@ -236,9 +245,9 @@ Language
 
 - SystemVerilog
 
-Verification Style
+Verification Method
 
-- Directed Testbench
+- Directed Verification
 
 Waveform Analysis
 
@@ -248,10 +257,12 @@ Waveform Analysis
 
 # Verification Result
 
-All implemented RTL modules successfully passed functional verification.
+All RTL modules have successfully passed standalone verification.
 
-The complete single-cycle processor executes the currently implemented RV32I instruction subset correctly.
+The complete AstraRV single-cycle processor successfully executes every currently implemented RV32I instruction.
 
-Overall Verification Status
+## Final Verification Status
 
-PASS
+# ✅ PASS
+
+**AstraRV v1.0 is functionally verified and considered a stable release.**
