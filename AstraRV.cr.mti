@@ -1,11 +1,4 @@
-C:/AstraRV/rtl/core/astrarv_imem.sv {1 {vlog -work work -sv -stats=none C:/AstraRV/rtl/core/astrarv_imem.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
--- Compiling module astrarv_imem
-
-Top level modules:
-	astrarv_imem
-
-} {} {}} C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv {1 {vlog -work work -sv -stats=none C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
+C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv {1 {vlog -work work -sv -stats=none C:/AstraRV/rtl/core/astrarv_single_cycle_cpu.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
 -- Compiling module astrarv_single_cycle_cpu
 
@@ -67,6 +60,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb 
 
 Top level modules:
 	astrarv_regfile
+
+} {} {}} C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv {1 {vlog -work work -sv -stats=none C:/AstraRV/tb/core/astrarv_single_cycle_cpu_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module astrarv_single_cycle_cpu_tb
+
+Top level modules:
+	astrarv_single_cycle_cpu_tb
 
 } {} {}} C:/AstraRV/rtl/core/astrarv_control.sv {1 {vlog -work work -sv -stats=none C:/AstraRV/rtl/core/astrarv_control.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021

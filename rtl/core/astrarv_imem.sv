@@ -47,7 +47,7 @@ logic [31:0] memory [0:DEPTH-1];
     // End of Program
     memory[10] = 32'h00000013;    // nop
 
-end*/
+end
 initial begin
 
     //--------------------------------------------------
@@ -79,6 +79,38 @@ initial begin
     memory[11] = 32'h0020B633;  // sltu x12,x1,x2
 
     memory[12] = 32'h00000013;  // nop
+
+end
+initial begin
+
+    //--------------------------------------------------
+    // Load / Store Verification
+    //--------------------------------------------------
+
+    memory[0] = 32'h00500093;   // addi x1,x0,5
+    memory[1] = 32'h00A00113;   // addi x2,x0,10
+    memory[2] = 32'h0020A023;   // sw   x2,0(x1)
+    memory[3] = 32'h0000A183;   // lw   x3,0(x1)
+    memory[4] = 32'h00000013;   // nop
+
+end*/
+initial begin
+
+    //----------------------------------------
+    // BEQ Verification Program
+    //----------------------------------------
+
+    memory[0] = 32'h00500093;   // addi x1,x0,5
+
+    memory[1] = 32'h00500113;   // addi x2,x0,5
+
+    memory[2] = 32'h00208463;   // beq x1,x2,+8
+
+    memory[3] = 32'h06300193;   // addi x3,x0,99  (should be skipped)
+
+    memory[4] = 32'h00A00193;   // addi x3,x0,10
+
+    memory[5] = 32'h00000013;   // nop
 
 end
 
