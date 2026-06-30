@@ -93,7 +93,7 @@ initial begin
     memory[3] = 32'h0000A183;   // lw   x3,0(x1)
     memory[4] = 32'h00000013;   // nop
 
-end*/
+end
 initial begin
 
     //----------------------------------------
@@ -111,6 +111,33 @@ initial begin
     memory[4] = 32'h00A00193;   // addi x3,x0,10
 
     memory[5] = 32'h00000013;   // nop
+
+end*/
+initial begin
+
+    //--------------------------------------------------
+    // I-Type Instruction Verification
+    //--------------------------------------------------
+
+    memory[0]  = 32'h00F00093;   // addi  x1,x0,15
+
+    memory[1]  = 32'h0070F113;   // andi  x2,x1,7
+
+    memory[2]  = 32'h0080E193;   // ori   x3,x1,8
+
+    memory[3]  = 32'h0030C213;   // xori  x4,x1,3
+
+    memory[4]  = 32'h00209293;   // slli  x5,x1,2
+
+    memory[5]  = 32'h0010D313;   // srli  x6,x1,1
+
+    memory[6]  = 32'h4010D393;   // srai  x7,x1,1
+
+    memory[7]  = 32'h0140A413;   // slti  x8,x1,20
+
+    memory[8]  = 32'h0140B493;   // sltiu x9,x1,20
+
+    memory[9]  = 32'h00000013;   // nop
 
 end
 

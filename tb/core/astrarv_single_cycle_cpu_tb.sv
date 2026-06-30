@@ -157,10 +157,19 @@ check_reg(1, 32'd5);
 check_reg(2, 32'd10);
 check_reg(3, 32'd10);
 
-check_mem(1, 32'd10);*/
+check_mem(1, 32'd10);
 check_reg(1,32'd5);
 check_reg(2,32'd5);
-check_reg(3,32'd10);
+check_reg(3,32'd10);*/
+check_reg(1,32'd15);
+check_reg(2,32'd7);
+check_reg(3,32'd15);
+check_reg(4,32'd12);
+check_reg(5,32'd60);
+check_reg(6,32'd7);
+check_reg(7,32'd7);
+check_reg(8,32'd1);
+check_reg(9,32'd1);
 
         //-----------------------------------
         // Example Memory Check
