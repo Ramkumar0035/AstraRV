@@ -8,9 +8,9 @@ module astrarv_imem #(
 
 logic [31:0] memory [0:DEPTH-1];
 
-initial begin
+/*initial begin
 
-    //----------------------------------------------------------
+   //----------------------------------------------------------
     // I-Type Instruction Verification Program
     //----------------------------------------------------------
 
@@ -46,6 +46,39 @@ initial begin
 
     // End of Program
     memory[10] = 32'h00000013;    // nop
+
+end*/
+initial begin
+
+    //--------------------------------------------------
+    // R-Type Instruction Verification
+    //--------------------------------------------------
+
+    memory[0] = 32'h00500093;   // addi x1,x0,5
+
+    memory[1] = 32'h00A00113;   // addi x2,x0,10
+
+    memory[2] = 32'h002081B3;   // add  x3,x1,x2
+
+    memory[3] = 32'h40110233;   // sub  x4,x2,x1
+
+    memory[4] = 32'h0020F2B3;   // and  x5,x1,x2
+
+    memory[5] = 32'h0020E333;   // or   x6,x1,x2
+
+    memory[6] = 32'h0020C3B3;   // xor  x7,x1,x2
+
+    memory[7] = 32'h00209433;   // sll  x8,x1,x2
+
+    memory[8] = 32'h0020D4B3;   // srl  x9,x1,x2
+
+    memory[9] = 32'h4020D533;   // sra  x10,x1,x2
+
+    memory[10] = 32'h0020A5B3;  // slt  x11,x1,x2
+
+    memory[11] = 32'h0020B633;  // sltu x12,x1,x2
+
+    memory[12] = 32'h00000013;  // nop
 
 end
 
