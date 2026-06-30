@@ -1,4 +1,5 @@
 # AstraRV
+![SystemVerilog](https://img.shields.io/badge/Language-SystemVerilog-blue)![Architecture](https://img.shields.io/badge/Architecture-RV32I%20Single%20Cycle-green)![Verification](https://img.shields.io/badge/Verification-ModelSim-success)![Status](https://img.shields.io/badge/Project-v1.0-orange)
 
 AstraRV is a **32-bit RV32I Single-Cycle RISC-V Processor** designed and implemented completely in **SystemVerilog** following an industrial RTL design methodology.
 
