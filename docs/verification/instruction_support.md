@@ -1,14 +1,14 @@
 # AstraRV Instruction Support
 
-# Overview
+## Overview
 
-The AstraRV processor currently implements a subset of the RV32I Instruction Set Architecture (ISA).
+AstraRV is a modular 32-bit RV32I Single-Cycle RISC-V processor written in SystemVerilog.
 
-The following table summarizes the implementation and verification status of each supported instruction.
+This document summarizes the implementation and verification status of the currently supported RV32I instructions.
 
 ---
 
-# Arithmetic Instructions
+# Arithmetic Instructions (R-Type)
 
 | Instruction | Implemented | Verified |
 |------------|:-----------:|:--------:|
@@ -25,19 +25,19 @@ The following table summarizes the implementation and verification status of eac
 
 ---
 
-# Immediate Instructions
+# Immediate Instructions (I-Type)
 
 | Instruction | Implemented | Verified |
 |------------|:-----------:|:--------:|
 | ADDI  | ✅ | ✅ |
-| SLTI  | ✅ | ❌ |
-| SLTIU | ✅ | ❌ |
-| ANDI  | ✅ | ❌ |
-| ORI   | ✅ | ❌ |
-| XORI  | ✅ | ❌ |
-| SLLI  | ✅ | ❌ |
-| SRLI  | ✅ | ❌ |
-| SRAI  | ✅ | ❌ |
+| ANDI  | ✅ | ✅ |
+| ORI   | ✅ | ✅ |
+| XORI  | ✅ | ✅ |
+| SLLI  | ✅ | ✅ |
+| SRLI  | ✅ | ✅ |
+| SRAI  | ✅ | ✅ |
+| SLTI  | ✅ | ✅ |
+| SLTIU | ✅ | ✅ |
 
 ---
 
@@ -55,55 +55,24 @@ The following table summarizes the implementation and verification status of eac
 | Instruction | Implemented | Verified |
 |------------|:-----------:|:--------:|
 | BEQ | ✅ | ✅ |
-| BNE | ❌ | ❌ |
-| BLT | ❌ | ❌ |
-| BGE | ❌ | ❌ |
-| BLTU | ❌ | ❌ |
-| BGEU | ❌ | ❌ |
 
 ---
 
-# Jump Instructions
+# Fully Verified Instructions
 
-| Instruction | Implemented | Verified |
-|------------|:-----------:|:--------:|
-| JAL | ❌ | ❌ |
-| JALR | ❌ | ❌ |
-
----
-
-# Upper Immediate Instructions
-
-| Instruction | Implemented | Verified |
-|------------|:-----------:|:--------:|
-| LUI | ❌ | ❌ |
-| AUIPC | ❌ | ❌ |
-
----
-
-# Verification Summary
-
-## Fully Verified
+The following implemented instructions have been functionally verified using directed SystemVerilog testbenches and ModelSim waveform analysis.
 
 - ADD
 - SUB
-- SLT
-- SLTU
 - AND
 - OR
 - XOR
 - SLL
 - SRL
 - SRA
+- SLT
+- SLTU
 - ADDI
-- LW
-- SW
-- BEQ
-
----
-
-## RTL Implemented but Not Yet Verified
-
 - ANDI
 - ORI
 - XORI
@@ -112,33 +81,45 @@ The following table summarizes the implementation and verification status of eac
 - SRAI
 - SLTI
 - SLTIU
+- LW
+- SW
+- BEQ
 
 ---
 
-## Planned for Future Releases
+# Current ISA Coverage
+
+| Category | Verified |
+|----------|---------:|
+| R-Type Arithmetic | 10 / 10 |
+| I-Type Arithmetic | 9 / 9 |
+| Memory | 2 / 2 |
+| Branch | 1 / 1 |
+| Overall Implemented | **22 / 22** |
+
+---
+
+# Planned Instructions
+
+The following RV32I instructions are planned for future releases.
+
+### Branch
 
 - BNE
 - BLT
 - BGE
 - BLTU
 - BGEU
+
+### Jump
+
 - JAL
 - JALR
+
+### Upper Immediate
+
 - LUI
 - AUIPC
-
----
-
-# Current ISA Coverage
-
-| Category | Progress |
-|----------|---------:|
-| Arithmetic | 10 / 10 |
-| Immediate | 9 / 9 |
-| Memory | 2 / 2 |
-| Branch | 1 / 6 |
-| Jump | 0 / 2 |
-| Upper Immediate | 0 / 2 |
 
 ---
 
