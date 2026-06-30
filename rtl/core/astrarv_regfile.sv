@@ -41,10 +41,6 @@ always_comb begin
     else
         o_rs1_data = registers[i_rs1_addr];
 
-end
-
-always_comb begin
-
     if(i_rs2_addr == 0)
         o_rs2_data = '0;
     else
